@@ -2,7 +2,7 @@ from tkinter import *
 import parser
 
 root = Tk()
-root.title('MHT Calculator')
+root.title('Calculator')
 root.configure(background="light blue")
 root.geometry("260x220")
 # Input_Section
