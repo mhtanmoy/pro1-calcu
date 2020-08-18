@@ -85,43 +85,27 @@ dis = Entry(root)
 dis.grid(row=0, column=0, columnspan=8, ipadx=55,ipady=10, padx=10, pady=12)
 
 # Button_Num_Section
-Button(root, text="  7  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(7)).grid(
-    row=2, column=0)
-Button(root, text="  8  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(8)).grid(
-    row=2, column=1)
-Button(root, text="  9  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(9)).grid(
-    row=2, column=2)
+Button(root, text="  7  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(7)).grid(row=2, column=0)
+Button(root, text="  8  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(8)).grid(row=2, column=1)
+Button(root, text="  9  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(9)).grid(row=2, column=2)
 
-Button(root, text="  4  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(4)).grid(
-    row=3, column=0)
-Button(root, text="  5  ", width=5, height=2, fg='black', bg='white', bd=1, command=lambda: Set_Value(5)).grid(
-    row=3, column=1)
-Button(root, text="  6  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(6)).grid(
-    row=3, column=2)
+Button(root, text="  4  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(4)).grid(row=3, column=0)
+Button(root, text="  5  ", width=5, height=2, fg='black', bg='white', bd=1, command=lambda: Set_Value(5)).grid(row=3, column=1)
+Button(root, text="  6  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(6)).grid(row=3, column=2)
 
-Button(root, text="  1  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(1)).grid(
-    row=4, column=0)
-Button(root, text="  2  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(2)).grid(
-    row=4, column=1)
-Button(root, text="  3  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(3)).grid(
-    row=4, column=2)
+Button(root, text="  1  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(1)).grid(row=4, column=0)
+Button(root, text="  2  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(2)).grid(row=4, column=1)
+Button(root, text="  3  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(3)).grid(row=4, column=2)
 
 # Button_functional_section
-Button(root, text="  C  ", fg='white', bg='grey', bd=1, width=5, height=2, command=lambda: All_Clear()).grid(row=5,
-                                                                                                             column=0)
-Button(root, text="  0  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(0)).grid(
-    row=5, column=1)
-Button(root, text="  .  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator(".")).grid(row=5,
-                                                                                                               column=2)
+Button(root, text="  C  ", fg='white', bg='grey', bd=1, width=5, height=2, command=lambda: All_Clear()).grid(row=5,column=0)
+Button(root, text="  0  ", width=5, height=2, fg='black', bg='light blue', bd=1, command=lambda: Set_Value(0)).grid(row=5, column=1)
+Button(root, text="  .  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator(".")).grid(row=5,column=2)
 
-Button(root, text="  +  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("+")).grid(row=2,
-                                                                                                               column=3)
-Button(root, text="  -  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("-")).grid(row=3,
-                                                                                                               column=3)
-Button(root, text="  x  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("*")).grid(row=4,
-                                                                                                               column=3)
-Button(root, text="  ÷  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("/")).grid(row=5,
-                                                                                                               column=3)
+Button(root, text="  +  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("+")).grid(row=2,column=3)
+Button(root, text="  -  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("-")).grid(row=3,column=3)
+Button(root, text="  x  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("*")).grid(row=4,column=3)
+Button(root, text="  ÷  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("/")).grid(row=5,column=3)
 
 Button(root, text="  π  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("*3.1415926535")).grid(row=2, column=4)
 Button(root, text="  %  ", width=5, height=2, fg='black', bg='white', bd=1, command=lambda: operator("%")).grid(row=3,column=4)
@@ -131,7 +115,6 @@ Button(root, text="  =  ", width=5, height=2, fg='black', bg='light blue', bd=1,
 Button(root, text=" ⌫ ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: Back_space()).grid(row=2, column=5)
 Button(root, text="   !   ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: factorial_dis()).grid(row=3, column=5)
 Button(root, text="   )   ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator(")")).grid(row=4,column=5)
-Button(root, text="  x²  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("**2")).grid(row=5,
-                                                                                                                  column=5)
+Button(root, text="  x²  ", width=5, height=2, fg='white', bg='grey', bd=1, command=lambda: operator("**2")).grid(row=5,column=5)
 
 root.mainloop()
